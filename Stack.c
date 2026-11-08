@@ -20,10 +20,6 @@ Stack *stack() {
 }
 
 void push(Stack *stack, int data) {
-    if (stack->head == NULL) {
-        return;
-    }
-
     node *n = malloc(sizeof(node));
     n->data = data;
     n->next = NULL;
